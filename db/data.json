@@ -1,0 +1,251 @@
+[
+  {
+    "name": "POMIDOR kg",
+    "description": "Świeże pomidorki",
+    "producer": "Polveg SP. Z O.O. Biernackiego 10/6 20-089 Lublin Agrokordi Spółka z o.o. Szosa Turecka 12 62-800 Kalisz",
+    "price": 11.99,
+    "availableCount": 100,
+    "category": "vegetables",
+    "storingConditions": "Zakres temperatury przechowywania: od 12°C do 20°C.",
+    "otherInformation": [
+      "Średnia waga 1 szt. to 0,2kg.",
+      "Kraj pochodzenia:Maroko.",
+      "Ilość netto (g/ml):1000"
+    ],
+    "recommendedDailyDose": {
+      "energy": 19,
+      "fat": 0.2,
+      "saturatedFattyAcids": 0.05,
+      "carbs": 4.1,
+      "sugar": 2.8,
+      "proteins": 0.9,
+      "salt": 0.02
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 1000
+    },
+    "imgPath": "db/images/pomidorki_ze_szklarni.png"
+  },
+
+  {
+    "name": "UNCLE BEN'S Ryż basmati torebka 4 x 125 g",
+    "description": "Ryż Basmati Uncle Ben’s to rzadka odmiana ryżu długoziarnistego, którą ze względu na jej szlachetne pochodzenie oraz bardzo wyrazisty orzechowy aromat znawcy nazywają królem ryżu. Unikalny smak i zapach ryż zawdzięcza swojemu szlachetnemu pochodzeniu. Ryż Basmati Uncle Ben’s® jest uprawiany tylko na terenach Indii i Pakistanu, u podnóży Himalajów. Ma śnieżnobiałe, delikatne, długie i smukłe ziarna, które podczas gotowania jeszcze bardziej się wydłużają. Jest niezastąpionym i niezwykle cenionym przez znawców kuchni indyjskiej i azjatyckiej dodatkiem. Znakomity również do deserów.",
+    "producer": "Mars Polska sp. z o.o., Kożuszki Parcel 42, 96-500 Sochaczew",
+    "price": 17.99,
+    "availableCount": 100,
+    "category": "rice",
+    "ingredients": "Ryż basmati",
+    "storingConditions": "Przechowywać w temperaturze pokojowej, w suchych warunkach.",
+    "otherInformation": [
+      "Kraj pochodzenia:Holland",
+      "Ilość netto (g/ml):500"
+    ],
+    "recommendedDailyDose": {
+      "energy": 346,
+      "fat": 0.5,
+      "saturatedFattyAcids": 0.2,
+      "carbs": 77,
+      "sugar": 0.2,
+      "proteins": 7.6
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 500
+    },
+    "imgPath": "db/images/ryzyk.png"
+  },
+
+  {
+    "name": "BANAN Premium kg",
+    "producer": "Esssa sound records",
+    "description": "Super bananki",
+    "price": 6.99,
+    "availableCount": 200,
+    "category": "fruits",
+    "storingConditions": "Zakres temperatury przechowywania: od 6°C do 20°C.",
+    "otherInformation": [
+      "Średnia waga 1 sztuki to 300 g.",
+      "Kraj pochodzenia:Costa Rica",
+      "Ilość netto (g/ml):1000"
+    ],
+    "recommendedDailyDose": {
+      "energy": 97,
+      "fat": 0.3,
+      "saturatedFattyAcids": 0.12,
+      "carbs": 23.5,
+      "sugar": 19.2,
+      "proteins": 1,
+      "salt": 0
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 1000
+    },
+    "imgPath": "db/images/bogate_dziecko.png"
+  },
+
+  {
+    "name": "MORLINY Polędwica z indyka 140 g",
+    "description": "Polędwica z indyka wędzona parzona z połączonych kawałków mięsa z dodaną wodą.",
+    "producer": "Animex Foods Sp. z o.o. sp.k. Morliny 15 14-100 Ostróda Oddział w Suwałkach ul. Wojska Polskiego 112A 16-400 Suwałki",
+    "price": 5.99,
+    "availableCount": 10,
+    "category": "meat",
+    "ingredients": "Aromaty, białko sojowe, błonnik pszenny, ekstrakty przypraw, glukoza, mięso z indyka 74%, skrobia modyfikowana, sól, woda, Askorbinian sodu, Difosforan, Octan potasu, Polifosforany , Izoaskorbinian sodu, Mleczan potasu, Azotyn sodu, Karagen",
+    "storingConditions": "Przechowywać w temperaturze od + C do +6 C Zakres temperatury przechowywania: od 1°C do 6°C.",
+    "otherInformation": ["Ilość netto (g/ml):140", "Kraj pochodzenia:Nieokreślony"],
+    "recommendedDailyDose": {
+      "energy": 152,
+      "fat": 9.3,
+      "saturatedFattyAcids": 3.1,
+      "carbs": 1.9,
+      "sugar": 0.5,
+      "proteins": 15,
+      "salt": 2.4
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 140
+    },
+    "imgPath": "db/images/synecka.png"
+  },
+
+  {
+    "name": "SOKOŁÓW Szynka sznycle 360 g",
+    "description": "Mięso wieprzowe",
+    "producer": "SOKOŁÓW",
+    "price": 15.99,
+    "availableCount": 2,
+    "category": "meat",
+    "ingredients": "100% wieprzowiny",
+    "storingConditions": "Zakres temperatury przechowywania: od 0 st C do 4 st C",
+    "otherInformation": ["Kraj pochodzenia:Polska", "Ilość netto (g/ml):360"],
+    "measure": {
+      "unit": "GRAM",
+      "value": 360
+    },
+    "imgPath": "db/images/schnitzel.png"
+  },
+
+  {
+    "name": "WŁOSZCZOWA Ser żółty gouda w plastrach 150 g",
+    "description": "Ser podpuszczkowy, dojrzewający.  Cechy: źródło wapnia, bez konserwantów, z polskiego mleka Najlepszy Produkt - Wybór Konsumentów 2019 srebrny medal",
+    "producer": "Okręgowa Spółdzielnia Mleczarska, 29-100 Włoszczowa, ul. Kochanowskiego 1 tel. +48 41 3883300, fax +48 41 3883327, e-mail: osm@osmwloszczowa.com.pl",
+    "price": 5.69,
+    "availableCount": 30,
+    "category": "cheese",
+    "ingredients": "Składniki mleko pasteryzowane sól spożywcza stabilizator: chlorek wapnia kultury bakterii mlekowych (mleko) podpuszczka mikrobiologiczna barwnik: karoteny",
+    "storingConditions": "Przechowywać w temperaturze od 0 C do +10 C Zakres temperatury przechowywania: od 0°C do 10°C.",
+    "otherInformation": ["Kraj pochodzenia:Nieokreślony", "Ilość netto (g/ml):150"],
+    "recommendedDailyDose": {
+      "energy": 338,
+      "fat": 26,
+      "saturatedFattyAcids": 18,
+      "carbs": 1.1,
+      "sugar": 0,
+      "proteins": 25,
+      "salt": 1.5
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 150
+    },
+    "imgPath": "db/images/serek.png"
+  },
+
+  {
+    "name": "ŁACIATE Mleko UHT 2,0 % 1 l",
+    "description": "Łaciate Mleko UHT 2,0 % 1 l. Mleko UHT zawartość tłuszczu 2,0 %.",
+    "producer": "Oddział Zakład Produkcji Mleczarskiej w Grajewie ul. Elewatorska 13, 19-203 Grajewo",
+    "price": 3.79,
+    "availableCount": 1000,
+    "category": "milk",
+    "ingredients": "Mleko 100 %",
+    "storingConditions": "Przechowywać w suchym i chłodnym miejscu, Po otwarciu przechowywać w lodówce i spożyć w ciągu 3 dni, Zakres temperatury przechowywania: od 5°C do 25°C.",
+    "otherInformation": ["Kraj pochodzenia:Polska", "Ilość netto (g/ml):1000"],
+    "recommendedDailyDose": {
+      "energy": 50,
+      "fat": 2,
+      "saturatedFattyAcids": 1.2,
+      "carbs": 4.8,
+      "sugar": 4.8,
+      "proteins": 3.3
+    },
+    "measure": {
+      "unit": "MILLILITERS",
+      "value": 1000
+    },
+    "imgPath": "db/images/mleczko.png"
+  },
+
+  {
+    "name": "PUTKA Chleb zwykły - krojony 500 g",
+    "description": "Mmm chlebek",
+    "producer": "Siedziba: ul. Brata Alberta 1, 05-075 Warszawa Wesoła; Zakład produkcyjny: ul. Sadowa 36, 05-850 Jawczyce",
+    "price": 2.99,
+    "availableCount": 80,
+    "category": "bread",
+    "ingredients": "mąka PSZENNA (54%), naturalny zakwas ŻYTNI (mąka ŻYTNIA (22%), woda), woda, sól, drożdże.",
+    "storingConditions": "Zakres temperatury przechowywania: od 18°C do 22°C.",
+    "otherInformation": ["Kraj pochodzenia:Nieokreślony", "Ilość netto (g/ml):500", "Dane kontaktowe dostawcy:PUTKA sp. z o.o. sp.k. ul. Sadowa 36; 05-850 Jawczyce."],
+    "recommendedDailyDose": {
+      "energy": 250,
+      "fat": 1.5,
+      "saturatedFattyAcids": 0.3,
+      "carbs": 49,
+      "sugar": 1.9,
+      "proteins": 7.6,
+      "salt": 1.6
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 500
+    },
+    "imgPath": "db/images/bread.png"
+  },
+
+  {
+    "name": "LUBELLA Makaron spaghetti 400 g",
+    "description": "Makaron spaghetti.",
+    "producer": "MW FOOD Sp. z o.o. Sp.k. ul. Chopina 10 34-100 Wadowice",
+    "price": 4.99,
+    "availableCount": 80,
+    "category": "pasta",
+    "ingredients": "mąka makaronowa pszenna",
+    "storingConditions": "Przechowuj w suchym i chłodnym miejscu.",
+    "usageInstruction": "Na każde 100 g makaronu zagotuj 1 l posolonej wody. Wrzuć makaron, gotuj 7-9 minut, od czasu do czasu mieszając. Następnie odcedź.",
+    "otherInformation": ["Kraj pochodzenia:Polska", "Ilość netto (g/ml):400"],
+    "recommendedDailyDose": {
+      "energy": 351,
+      "fat": 1.4,
+      "saturatedFattyAcids": 0.4,
+      "carbs": 70,
+      "sugar": 4.2,
+      "proteins": 13,
+      "salt": 0.03
+    },
+    "measure": {
+      "unit": "GRAM",
+      "value": 400
+    },
+    "imgPath": "db/images/spaghetti.png"
+  },
+
+  {
+    "name": "HOME Sól spożywcza 1 kg",
+    "description": "Sól kujawska naturalnie czysta Zawiera aż 99,8% chlorku sodu, co świadczy o jej bardzo wysokiej czystości, Uzyskiwana jest z tych samych zasobów regionu kujawskiego, co sól w uzdrowiskach w Inowrocławiu i Ciechocinku, Stanowi niezbędnik żywnościowy, dostępna jest w opakowaniu 1kg i została nagrodzona Polskim Godłem Promocyjnym „Teraz Polska”,PRZEZNACZENIE Gospodarstwa domowe Gastronomia Przemysł spożywczy",
+    "producer": "CIECH S,A, Soda Polska, BUKOWA 7; 87-100 TORUŃ",
+    "price": 1.79,
+    "availableCount": 40,
+    "category": "salt_and_sugar",
+    "ingredients": "chlorek sodu min,99,8%, substancja przeciwzbrylająca E536, substancja wzbogacająca - jodan potasu",
+    "storingConditions": "Przechowywać w suchym miejscu, Zakres temperatury przechowywania: od 0°C do 25°C.",
+    "otherInformation": ["Kraj pochodzenia:Polska", "Ilość netto (g/ml):1000"],
+    "measure": {
+      "unit": "GRAM",
+      "value": 1000
+    },
+    "imgPath": "db/images/sul.png"
+  }
+]
