@@ -1,0 +1,11 @@
+### Get product by ID
+GET http://localhost:8080/api/products/product?id=65c68d3c8414a39a373e17f9
+
+### Get product list (basic)
+GET http://localhost:8080/api/products/list?pageNo=0
+
+### Get product list (with categories)
+GET http://localhost:8080/api/products/list?pageNo=0&category=pasta
+
+### Get product list (sortable)
+GET http://localhost:8080/api/products/list?pageNo=0&sort=DISCOUNT_FIRST
