@@ -1,9 +1,14 @@
 package pl.shop.backend;
 
+import com.mongodb.client.gridfs.model.GridFSFile;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.gridfs.GridFsResource;
+import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -12,9 +17,11 @@ import java.util.Optional;
 public class ProductService {
 
     private final ProductRepository productRepository;
+    private final GridFsTemplate fsTemplate;
     @Autowired
-    public ProductService(ProductRepository productRepository) {
+    public ProductService(ProductRepository productRepository, GridFsTemplate fsTemplate) {
         this.productRepository = productRepository;
+        this.fsTemplate = fsTemplate;
     }
 
     public Page<Product> getProducts(int pageNumber, Optional<String> category, Optional<ProductSorter> sorter) {
@@ -28,6 +35,14 @@ public class ProductService {
 
     public Optional<Product> getProductById(ObjectId objectId) {
         return productRepository.findById(objectId);
+    }
+
+    public GridFsResource getImage(ObjectId productId) {
+        GridFSFile file = fsTemplate.findOne(Query.query(Criteria.where("product_id").is(productId)));
+        if (file == null) {
+            return GridFsResource.absent("");
+        }
+        return fsTemplate.getResource(file);
     }
 
 }

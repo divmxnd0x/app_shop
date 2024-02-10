@@ -4,3 +4,8 @@ spring:
       uri: 'mongodb://admin:admin@localhost:27017/app_shop?authSource=admin'
       gridfs:
         database: app_shop
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 256MB
+      max-file-size: 256MB
