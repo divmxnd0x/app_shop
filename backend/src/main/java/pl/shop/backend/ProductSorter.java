@@ -11,7 +11,7 @@ public enum ProductSorter {
     BY_NAME_Z_A(Sort.by(new Order(Direction.DESC, "name", Sort.NullHandling.NULLS_LAST))),
     BY_PRICE_ASC(Sort.by(new Order(Direction.ASC, "price", Sort.NullHandling.NULLS_LAST))),
     BY_PRICE_DESC(Sort.by(new Order(Direction.DESC, "price", Sort.NullHandling.NULLS_LAST))),
-    DISCOUNT_FIRST(Sort.by(new Order(Direction.ASC, "discountPrice", Sort.NullHandling.NULLS_LAST))),
+    DISCOUNT_FIRST(Sort.by(new Order(Direction.DESC, "discountPrice", Sort.NullHandling.NULLS_FIRST))),
     DISCOUNT_LAST(Sort.by(new Order(Direction.ASC, "discountPrice", Sort.NullHandling.NULLS_FIRST)));
 
     private final Sort sorter;

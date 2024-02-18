@@ -82,6 +82,7 @@ watch([page, category, sortBy], () => {
                      :measure-value="item.measure.value"
                      :price-per-measure="item.pricePerMeasure"
                      :key="item.id"
+                     :discount-price="item.discountPrice"
     />
   </div>
 

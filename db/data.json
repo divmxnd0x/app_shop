@@ -33,6 +33,7 @@
     "description": "Ryż Basmati Uncle Ben’s to rzadka odmiana ryżu długoziarnistego, którą ze względu na jej szlachetne pochodzenie oraz bardzo wyrazisty orzechowy aromat znawcy nazywają królem ryżu. Unikalny smak i zapach ryż zawdzięcza swojemu szlachetnemu pochodzeniu. Ryż Basmati Uncle Ben’s® jest uprawiany tylko na terenach Indii i Pakistanu, u podnóży Himalajów. Ma śnieżnobiałe, delikatne, długie i smukłe ziarna, które podczas gotowania jeszcze bardziej się wydłużają. Jest niezastąpionym i niezwykle cenionym przez znawców kuchni indyjskiej i azjatyckiej dodatkiem. Znakomity również do deserów.",
     "producer": "Mars Polska sp. z o.o., Kożuszki Parcel 42, 96-500 Sochaczew",
     "price": 17.99,
+    "discountPrice": 10.00,
     "availableCount": 100,
     "category": "rice",
     "ingredients": "Ryż basmati",

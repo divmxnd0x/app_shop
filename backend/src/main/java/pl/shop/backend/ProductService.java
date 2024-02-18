@@ -27,8 +27,8 @@ public class ProductService {
 
     public Page<Product> getProducts(int pageNumber, Optional<String> category, Optional<ProductSorter> sorter) {
         PageRequest pageRequest = sorter
-                .map(sort -> PageRequest.of(pageNumber, 5).withSort(sort.getSorter()))
-                .orElseGet(() -> PageRequest.of(pageNumber, 5));
+                .map(sort -> PageRequest.of(pageNumber, 8).withSort(sort.getSorter()))
+                .orElseGet(() -> PageRequest.of(pageNumber, 8));
 
         return category.map(cat -> productRepository.findAvailableProducts(cat, pageRequest))
                 .orElseGet(() -> productRepository.findAvailableProducts(pageRequest));

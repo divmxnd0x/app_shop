@@ -8,7 +8,7 @@ GET http://localhost:8080/api/products/list?pageNo=1
 GET http://localhost:8080/api/products/list?pageNo=0&category=pasta
 
 ### Get product list (sortable)
-GET http://localhost:8080/api/products/list?pageNo=0&sort=DISCOUNT_FIRST
+GET http://localhost:8080/api/products/list?pageNo=0&sort=DISCOUNT_LAST
 
 ### Get image
 GET http://localhost:8080/api/products/image?id=65c68d3c8414a39a373e1803
