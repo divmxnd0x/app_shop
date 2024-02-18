@@ -11,6 +11,7 @@ import org.springframework.data.mongodb.gridfs.GridFsResource;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -26,8 +27,8 @@ public class ProductService {
 
     public Page<Product> getProducts(int pageNumber, Optional<String> category, Optional<ProductSorter> sorter) {
         PageRequest pageRequest = sorter
-                .map(sort -> PageRequest.of(pageNumber, 15).withSort(sort.getSorter()))
-                .orElseGet(() -> PageRequest.of(pageNumber, 15));
+                .map(sort -> PageRequest.of(pageNumber, 5).withSort(sort.getSorter()))
+                .orElseGet(() -> PageRequest.of(pageNumber, 5));
 
         return category.map(cat -> productRepository.findAvailableProducts(cat, pageRequest))
                 .orElseGet(() -> productRepository.findAvailableProducts(pageRequest));
@@ -43,6 +44,16 @@ public class ProductService {
             return GridFsResource.absent("");
         }
         return fsTemplate.getResource(file);
+    }
+
+    public List<Product> findProductsByName(String keyWord, Optional<String> category) {
+        return category.map(productRepository::findAvailableProducts)
+                .orElseGet(productRepository::findAll)
+                .stream()
+                .filter(product -> product.getAvailableCount() > 0)
+                .filter(product -> product.getName().toLowerCase().contains(keyWord.toLowerCase()))
+                .limit(25)
+                .toList();
     }
 
 }

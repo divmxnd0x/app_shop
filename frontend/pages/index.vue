@@ -1,13 +1,13 @@
 <script setup>
-  // definePageMeta({
-  //   layout: null
-  // })
+  definePageMeta({
+    layout: "empty"
+  })
 </script>
 
 <template>
   <div id="main-page" class="h-screen flex flex-col justify-around items-center">
     <p class="text-8xl text-neutral-200 font-outline-2 font-extrabold text-center">Witamy w sklepie Barbara</p>
-    <UButton class="block text-2xl">Rozpocznij przeglądanie</UButton>
+    <UButton class="block text-2xl" to="/products">Rozpocznij przeglądanie</UButton>
   </div>
 </template>
 

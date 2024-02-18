@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+  ssr: true,
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -9,7 +10,7 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
-    preference: 'light'
+    preference: 'dark'
   },
-  modules: ['@nuxt/ui']
+  modules: ['@nuxt/ui'],
 })

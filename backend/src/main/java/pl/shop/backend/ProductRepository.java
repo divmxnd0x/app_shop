@@ -7,6 +7,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ProductRepository extends MongoRepository<Product, ObjectId> {
 
@@ -22,4 +24,15 @@ public interface ProductRepository extends MongoRepository<Product, ObjectId> {
 
     @Query("{availableCount: {$gt: 0}}")
     Page<Product> findAvailableProducts(Pageable pageable);
+
+    @Query("""
+            {
+                $and: [
+                    {availableCount: {$gt: 0}},
+                    {category: {$eq: ?0}}
+                ]
+            }
+            """)
+    List<Product> findAvailableProducts(String category);
+
 }

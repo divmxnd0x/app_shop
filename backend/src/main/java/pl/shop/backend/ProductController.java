@@ -6,14 +6,13 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.data.domain.Page;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/products")
 public class ProductController {
     private final ProductService productService;
@@ -44,6 +43,16 @@ public class ProductController {
     @GetMapping(value = "/image", produces = MediaType.IMAGE_PNG_VALUE)
     public ResponseEntity<InputStreamResource> image(@RequestParam String id) {
         return ResponseEntity.ok(productService.getImage(new ObjectId(id)));
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<ProductListItemDTO>> search(@RequestParam String keyWord,
+                                                           @RequestParam(required = false) String category) {
+        List<ProductListItemDTO> list = productService.findProductsByName(keyWord, Optional.ofNullable(category))
+                .stream()
+                .map(ProductListItemDTO::toDto)
+                .toList();
+        return ResponseEntity.ok(list);
     }
 
 }

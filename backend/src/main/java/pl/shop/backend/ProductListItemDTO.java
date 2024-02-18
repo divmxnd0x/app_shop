@@ -21,6 +21,6 @@ public record ProductListItemDTO(ObjectId id,
                 product.getPrice(),
                 product.getDiscountPrice(),
                 product.getMeasure(),
-                pricePerMeasure);
+                Math.round(pricePerMeasure * 100.0) / 100.0);
     }
 }
