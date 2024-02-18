@@ -1,3 +1,5 @@
+import type {Favorite} from "~/composables/store";
+
 export const useUtils =() => {
     const pricePerMeasureText = (unit: string, pricePerMeasure: string): string => {
         if (!unit || !pricePerMeasure) {
@@ -72,18 +74,28 @@ export const useUtils =() => {
         }
     ]
 
-    const getCategoryDisplayName = (key: string): string => {
-        // @ts-ignore
+    const getCategoryDisplayName = (key: string): string | null => {
         return getAvailableCategories()
             .find(cat => cat.name === key)
             .displayName
+    }
+
+    const isInFavorite = (id: string, fav: Favorite[]) : boolean => {
+        return fav.filter(item => item.id === id).length > 0
+    }
+
+    const calculatePricePerMeasure = (measureValue: number, price: number): number => {
+        let value = (1000.0 / measureValue) * price;
+        return Math.round(value * 100) / 100;
     }
 
     return {
         pricePerMeasureText,
         createDailyDoseColumns,
         getAvailableCategories,
-        getCategoryDisplayName
+        getCategoryDisplayName,
+        isInFavorite,
+        calculatePricePerMeasure
     }
 }
 

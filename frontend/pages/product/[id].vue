@@ -1,9 +1,8 @@
 <script setup>
-
 const route = useRoute()
 const router = useRouter()
 const utils = useUtils()
-
+const fav = useFavorite()
 const id = route.params.id
 
 const response = await useFetch('http://localhost:8080/api/products/product',
@@ -15,6 +14,31 @@ const response = await useFetch('http://localhost:8080/api/products/product',
     })
 
 const data = response.data;
+const isInFav = ref(utils.isInFavorite(id, fav.value))
+
+watch(fav, () => {
+  isInFav.value = utils.isInFavorite(id, fav.value)
+})
+
+const handleButtonClick = () => {
+  if (!isInFav.value) {
+    fav.value = [
+      ...fav.value,
+      {
+        id: data.value.id,
+        name: data.value.name,
+        discountPrice: data.value.discountPrice,
+        price: data.value.price,
+        measureUnit: data.value.measure.unit,
+        measureValue: data.value.measure.value,
+        pricePerMeasure: utils.calculatePricePerMeasure(Number(data.value.measure.value), Number(data.value.price))
+      }
+    ]
+  } else {
+    fav.value = fav.value.filter(item => item.id !== id)
+  }
+  console.log(fav.value)
+}
 
 </script>
 
@@ -30,6 +54,14 @@ const data = response.data;
           <span v-if="data.discountPrice" class="line-through">{{ data.price }} zł</span>
           <span v-else>{{ data.price }} zł</span>
         </p>
+        <ClientOnly>
+          <UButton
+              :color="isInFav ? 'red' : 'primary'"
+              @click="handleButtonClick"
+          >
+            {{ isInFav ? 'Usuń z ulubionych' : 'Dodaj do ulubionych' }}
+          </UButton>
+        </ClientOnly>
       </div>
     </div>
     <div v-if="data.description" class="my-20">
@@ -68,10 +100,10 @@ const data = response.data;
         <li v-for="info in data.otherInformation">{{ info }}</li>
       </ul>
     </div>
-  <div v-if="data.recommendedDailyDose" class="my-20">
-    <p class="text-4xl">Zalecana dzienna porcja</p>
-    <UTable :rows="[data.recommendedDailyDose]" :columns="utils.createDailyDoseColumns(data.recommendedDailyDose)" />
-  </div>
+    <div v-if="data.recommendedDailyDose" class="my-20">
+      <p class="text-4xl">Zalecana dzienna porcja</p>
+      <UTable :rows="[data.recommendedDailyDose]" :columns="utils.createDailyDoseColumns(data.recommendedDailyDose)"/>
+    </div>
 
   </div>
 </template>

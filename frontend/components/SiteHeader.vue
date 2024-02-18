@@ -17,5 +17,6 @@ const items = [utils.getAvailableCategories().map(cat => {
     <UDropdown :popper="{arrow: true}" :items="items">
       <UButton class="py-3 text-2xl">Kategorie</UButton>
     </UDropdown>
+    <UButton class="py-3 text-2xl" to="/favorite">Ulubione</UButton>
   </div>
 </template>
