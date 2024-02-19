@@ -8,6 +8,9 @@ import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilde
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
+/**
+ * Main class of application
+ */
 @SpringBootApplication
 @EnableMongoRepositories
 public class BackendApplication {

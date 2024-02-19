@@ -10,6 +10,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
 
+/**
+ * Product entity
+ * Performs object mapping from MongoDB document
+ */
 @Document(collection = "products")
 @Getter
 @Setter

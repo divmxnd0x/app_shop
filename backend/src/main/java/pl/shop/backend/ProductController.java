@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Rest api cotroller for products stuff
+ */
 @RestController
 @CrossOrigin
 @RequestMapping("/api/products")

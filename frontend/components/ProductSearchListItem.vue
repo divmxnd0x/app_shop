@@ -1,3 +1,4 @@
+<!--Presentation component for displaying product in search results-->
 <script setup>
 const router = useRouter()
 const props = defineProps(['id', 'name', 'price', 'discountPrice'])

@@ -1,3 +1,4 @@
+<!--Displaying favorite items from store-->
 <script setup>
 const fav = useFavorite()
 const favNo = computed(() => fav.value.length)

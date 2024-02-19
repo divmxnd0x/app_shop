@@ -5,6 +5,9 @@ import pl.shop.backend.Product.Measure;
 
 import java.util.Optional;
 
+/**
+ * Data transfer object for better representation in lists at front
+ */
 public record ProductListItemDTO(ObjectId id,
                                  String name,
                                  Double price,

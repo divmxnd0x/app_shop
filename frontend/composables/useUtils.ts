@@ -1,3 +1,4 @@
+// Various utils used across all application
 import type {Favorite} from "~/composables/store";
 
 export const useUtils =() => {

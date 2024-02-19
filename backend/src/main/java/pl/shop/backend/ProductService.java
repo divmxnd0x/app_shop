@@ -14,6 +14,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+
+/**
+ * Service for communications with products database
+ */
 @Service
 public class ProductService {
 

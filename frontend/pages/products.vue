@@ -1,3 +1,4 @@
+<!--Products list site. Use get params to search by ?id, ?category, ?sortBy (sorting order)-->
 <script setup>
 const route = useRoute()
 const router = useRouter()
@@ -5,7 +6,7 @@ const utils = useUtils()
 
 let page = ref(Number(route.query.page) || 1)
 let category = ref(route.query.category)
-let sortBy = ref(route.query.sortBy)
+let sortBy = ref(route.query.sortBy) // see ProductSorter.java for available options
 const totalPages = ref(0)
 const elements = ref([])
 

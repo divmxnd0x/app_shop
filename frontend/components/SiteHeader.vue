@@ -1,3 +1,4 @@
+<!--Simple header for displaying available options in application-->
 <script setup>
 const router = useRouter()
 const utils = useUtils()

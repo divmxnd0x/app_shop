@@ -1,3 +1,5 @@
+<!--Component for display pagination and sorting-->
+<!--contains emits for informing parent about state changing-->
 <script setup>
 const props = defineProps(['totalPages', 'page', 'currentOption'])
 const emit = defineEmits(['page-changed', 'sort-changed'])

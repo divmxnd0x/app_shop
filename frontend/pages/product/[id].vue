@@ -1,3 +1,5 @@
+<!--Page to represent single product.-->
+<!--Remember to check that option you want to display is present in fetch response -->
 <script setup>
 const route = useRoute()
 const router = useRouter()

@@ -1,3 +1,4 @@
+// Favorite products store
 export const useFavorite = () => useState<Favorite[]>('favorite', () => [])
 export interface Favorite {
     id: string,

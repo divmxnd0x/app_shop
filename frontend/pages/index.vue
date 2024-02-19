@@ -1,3 +1,4 @@
+<!--Landing page-->
 <script setup>
   definePageMeta({
     layout: "empty"

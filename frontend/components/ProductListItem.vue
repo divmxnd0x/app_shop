@@ -1,3 +1,4 @@
+<!--Presentation component for displaying product at product lists (using in /products and /favorite)-->
 <script setup>
 const router = useRouter()
 const props = defineProps(['id', 'name', 'price', 'discountPrice', 'measureUnit', 'measureValue', 'pricePerMeasure'])

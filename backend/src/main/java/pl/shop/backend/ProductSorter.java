@@ -5,6 +5,9 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.domain.Sort.Order;
 
+/**
+ * Repository operations easy sorting abstraction
+ */
 @Getter
 public enum ProductSorter {
     BY_NAME_A_Z(Sort.by(new Order(Direction.ASC, "name", Sort.NullHandling.NULLS_LAST))),

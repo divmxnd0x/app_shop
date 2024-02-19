@@ -9,6 +9,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+/**
+ * Spring data JPA repository representation for querying data from MongoDB database
+ */
 @Repository
 public interface ProductRepository extends MongoRepository<Product, ObjectId> {
 

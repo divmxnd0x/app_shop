@@ -1,3 +1,9 @@
+# Simple python script for
+#     - connecting with mongo database
+#     - insert initial example products
+#     - upload example photos to gridFS database
+#     USE EVERYTIME WHEN CREATE NEW MONGO INSTANCE, OTHERWISE DB WILL BE EMPTY :)
+
 import pymongo
 import gridfs
 import json
